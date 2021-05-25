@@ -6,7 +6,7 @@ function calcShipping(sum, min, shipping) {
     // Задание №2.1. Рассчитать доставку
 
     // если productsSum равно 0,
-    if (productsSum == 0) {
+    if (productsSum = 0) {
     console.log("сумма в корзине: " + productsSum);
 
     // то shippingPrice присвоить значение 0
