@@ -72,3 +72,4 @@ function calcInvoice({sum, discountMinSum, discountPart, shippingFreeMinSum, shi
 
     return {discount: discountSum, freeShipping, shipping: shippingSum, total: totalSum};
 }
+
