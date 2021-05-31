@@ -34,7 +34,44 @@
 // }
 
 function sendRequest(name, phone, address, goods, sum) {
-    let data = {goods: [], order: {}};
+    let data = {
+        "data": {
+            client: 'Иван +7(999)999-99-99',
+            order: {
+                address: 'ул. Ленина, дом 1, 1 подъезд, 2 этаж, кв 10',
+                "sum": 1000
+            },
+            goods: [
+                {
+                    title: 'Пицца',
+                    count: 2
+                }
+            ]
+
+        }
+    };
+    name = 'Иван';
+    phone = '+7(999)999-99-99';
+    address = {
+        street: 'Ленина',
+        house: '1',
+        entrance: '1',
+        floor: '2',
+        flat: '10',
+    };
+
+        goods = [
+            {
+                id: 1,
+                title: 'Пицца',
+                count: 2,
+                price: '500.00'
+            }
+        ];
+        sum = 1000;
+
+        }
+    };
 
     let countOfGoods = goods.length;
 
